@@ -8,6 +8,7 @@
         "space-in-parens": [2, "always", { "exceptions": ["{}", "[]", "()"] } ],
         "strict": [2, "global"],
         "react/jsx-quotes": 0,
-        "jsx-quotes": [2, "prefer-single"]
+        "jsx-quotes": [2, "prefer-single"],
+        "brace-style": [2, "stroustrup"]
     }
 }
