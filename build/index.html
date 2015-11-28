@@ -12,16 +12,16 @@
     <script src="js/states/About.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript">
-        var game = new Phaser.Game( 768, 1024, Phaser.AUTO, 'game' );
+        var game = new Phaser.Game(768, 1024, Phaser.AUTO, 'game');
         //Add the States your game has.
         //remember to include them above.
-        game.state.add( 'Boot', BasicGame.Boot );
-        game.state.add( 'Preloader', BasicGame.Preloader );
-        game.state.add( 'MainMenu', BasicGame.MainMenu );
-        game.state.add( 'Game', BasicGame.Game );
-        game.state.add( 'About', BasicGame.About );
+        game.state.add('Boot', BasicGame.Boot);
+        game.state.add('Preloader', BasicGame.Preloader);
+        game.state.add('MainMenu', BasicGame.MainMenu);
+        game.state.add('Game', BasicGame.Game);
+        game.state.add('About', BasicGame.About);
         //Now start the Boot state.
-        game.state.start( 'Boot' );
+        game.state.start('Boot');
     </script>
 </head>
 
