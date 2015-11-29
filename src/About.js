@@ -1,4 +1,4 @@
-/* Brinkbit - Blank Game Template (Phaser) */
+/* global BasicGame */
 
 'use strict';
 
@@ -14,14 +14,14 @@ BasicGame.About.prototype = {
 
     create: function create() {
         // Create your stuff here
-        this.add.sprite(0, 0, 'assets1_bg.png');
-        var backBtn = this.add.button(0, 0, 'assets1_btn_back.png', btnClick);
+        this.add.sprite( 0, 0, 'assets1_bg.png' );
+        var backBtn = this.add.button( 0, 0, 'assets1_btn_back.png', btnClick );
         backBtn.x = 15;
         backBtn.y = 15;
 
-        function btnClick(target) {
-            if (target === backBtn) {
-                this.game.state.start('MainMenu');
+        function btnClick( target ) {
+            if ( target === backBtn ) {
+                this.game.state.start( 'MainMenu' );
             }
         }
     },
