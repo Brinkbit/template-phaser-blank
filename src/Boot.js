@@ -14,25 +14,24 @@ BasicGame.Boot.prototype = {
         // Unless you specifically know your game needs to support multi-touch I would recommend setting this to 1
         this.input.maxPointers = 1;
 
-        // Phaser will automatically pause if the browser tab the game is in loses focus. You can disable that here:
-        // this.stage.disableVisibilityChange = true;
+        // Phaser will automatically pause if the browser tab the game is in loses focus.
+        // You can disable that here:
+        this.stage.disableVisibilityChange = true;
         this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
         this.scale.setShowAll();
         this.scale.pageAlignHorizontally = true;
         this.scale.pageAlignVertically = true;
-        this.scale.setScreenSize( true );
-        this.scale.refresh();
         this.game.stage.backgroundColor = '#000000';
+        this.scale.refresh();
     },
 
     preload: function preload() {
-        // Here we load the assets required for our preloader (in this case a background and a loading bar)
-        this.load.atlas( 'preloader', 'assets/images/atlases/preloader.png', 'assets/json/atlases/preloader.json' );
+        //  Here we load the assets required for the preloader
+        this.load.image( 'assets1_preload_bar.png', 'assets1_preload_bar.png' );
     },
 
     create: function create() {
-        // By this point the preloader assets have loaded to the cache, we've set the game settings
-        // So now let's start the real preloader going
+        // Start the preloader state since we've loaded the loader bar asset it requires
         this.state.start( 'Preloader' );
     }
 
