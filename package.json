@@ -2,7 +2,6 @@
   "name": "template-phaser",
   "version": "0.1.0",
   "description": "A blank phaser template for making html5 games",
-  "main": "index.js",
   "scripts": {
     "build": "grunt build",
     "eslint-pre-commit": "./scripts/eslint-pre-commit",
@@ -21,9 +20,9 @@
   "author": "Brinkbit",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Brinkbit/template-phaser/issues"
+    "url": "https://github.com/Brinkbit/template-phaser-blank/issues"
   },
-  "homepage": "https://github.com/Brinkbit/template-phaser#readme",
+  "homepage": "https://github.com/Brinkbit/template-phaser-blank#readme",
   "pre-commit": [
     "eslint-pre-commit"
   ],
@@ -35,9 +34,7 @@
     "grunt-contrib-clean": "^0.7.0",
     "grunt-contrib-copy": "^0.8.2",
     "grunt-eslint": "^17.3.1",
-    "load-grunt-tasks": "^3.3.0"
-  },
-  "dependencies": {
+    "load-grunt-tasks": "^3.3.0",
     "phaser": "^2.4.4"
   }
 }
